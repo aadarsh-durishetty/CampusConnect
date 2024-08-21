@@ -1,0 +1,78 @@
+Project Title: Campus Connect: A Web Chat App for University Students
+Project Overview:
+Campus Connect is a scalable web chat application designed to streamline and enhance the student experience at your university. This app addresses the challenges students face at the beginning of each semester, such as managing course groups, organizing important information, and trading course slots. The platform allows students to easily connect with classmates, share important resources, and exchange course slots through a secure, authenticated environment.
+
+Key Features:
+User Authentication:
+
+College Email Authentication: Students must log in using their official college email, ensuring a secure and trusted environment. This step helps in automatically associating students with their respective courses and groups.
+Timetable Upload & Group Creation:
+
+Timetable Photo Upload: Upon logging in, students are prompted to upload a photo of their timetable. The app will extract course information, including course names, faculty, and time slots, using OCR (Optical Character Recognition).
+Automatic Group Creation: Based on the uploaded timetable, the app will automatically create a group for each course if it doesn't already exist. Students will be automatically added to the relevant groups based on their registered courses.
+Course Slot Trading:
+
+Trade Requests: Students can post requests to trade their course slots with others. For example, a student who is registered for "Business Analytics, Slot A1" but prefers another slot or course can post a trade request. Other students can respond directly within the app.
+Matching Engine: The app will include a feature that automatically matches students with similar trade requests, simplifying the process of finding a match.
+Resource Sharing and Organization:
+
+File Sharing: Students can share important files, notes, and resources directly within their course groups. The app will categorize and organize these files for easy access.
+Pinned Messages and Announcements: Important messages can be pinned in each group, ensuring that critical information, such as assignment deadlines or exam dates, is easily accessible.
+Search and Filtering:
+
+Search Functionality: Students can search for specific messages, files, or announcements within their groups. This feature ensures that no important information is lost in a sea of messages.
+Filter Options: Users can filter trade requests by course, slot, or faculty, making it easier to find relevant trade offers.
+Notifications:
+
+Customizable Notifications: Students can customize their notification settings for each group, allowing them to stay informed about important updates without being overwhelmed by less critical information.
+Alert for New Trade Matches: Notifications will be sent when a new trade match is found, ensuring that students don't miss any opportunities to switch courses.
+Admin and Moderation Tools:
+
+Group Moderators: Faculty or designated student moderators can manage group membership, approve or reject resource uploads, and ensure the group remains focused on course-related content.
+Report Feature: Students can report inappropriate content or spam within the app, ensuring a safe and respectful environment.
+User Profiles and Activity Logs:
+
+User Profiles: Each student will have a profile displaying their registered courses, past trade requests, and shared resources.
+Activity Logs: Students can view a log of their activity within the app, including messages sent, files uploaded, and trade requests posted.
+Integration with University Systems:
+
+University Calendar Integration: The app can sync with the university's academic calendar, automatically updating students about important dates such as add/drop deadlines, exams, and holidays.
+Course Information Updates: Integrate the app with the university's course registration system to automatically update course and faculty information when students make changes to their timetable.
+Additional Feature Ideas:
+Polling and Surveys: Allow students to create polls or surveys within groups to gather opinions on study sessions, preferred meeting times, etc.
+Event Creation: Students or faculty can create events within groups, such as study groups or review sessions, with RSVP options.
+AI-Powered Chatbot: Include a chatbot to answer frequently asked questions or assist with navigating the app.
+Technical Stack:
+Frontend & Backend: Next.js for both server-side rendering (SSR) and client-side rendering (CSR). This will allow for SEO benefits, faster page loads, and a more dynamic user experience.
+Real-time Communication: Socket.io for real-time messaging and notifications.
+Database: MongoDB with Mongoose for handling data related to users, groups, messages, and trades.
+OCR Integration: Google Cloud Vision or Tesseract for processing timetable images and extracting course data.
+Authentication: NextAuth.js for secure and flexible authentication using the college's email system.
+Deployment: Vercel for hosting the Next.js application, given its seamless integration with Next.js.
+Development Timeline:
+Phase 1: Research & Planning (1-2 weeks)
+
+Define the project scope and gather requirements.
+Research the best tools and technologies for OCR and real-time communication.
+Phase 2: Design & Prototyping (2-3 weeks)
+
+Create wireframes and prototypes of the user interface.
+Design the database schema and set up the project repository.
+Phase 3: Core Feature Development (4-6 weeks)
+
+Implement user authentication and profile management.
+Develop the timetable upload feature with OCR integration.
+Build the chat interface with real-time messaging using Socket.io.
+Create API routes for group creation and course slot trading.
+Phase 4: Testing & QA (2 weeks)
+
+Perform unit testing, integration testing, and user acceptance testing.
+Fix bugs and optimize the application for performance.
+Phase 5: Deployment & Monitoring (1 week)
+
+Deploy the application to Vercel.
+Monitor performance and user feedback, making any necessary adjustments.
+Phase 6: Feedback & Iteration (Ongoing)
+
+Gather user feedback and continue to refine the app.
+Add additional features based on user needs and feedback.
